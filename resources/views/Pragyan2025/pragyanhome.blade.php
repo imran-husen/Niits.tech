@@ -46,8 +46,8 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item text-dark" href="{{ url('/Cultural-Events-Participants-List')}}">Cultural</a></li>
-                        <li><a class="dropdown-item text-dark" href="{{ url('/Working-on-Page')}}">Academic</a></li>
-                        <li><a class="dropdown-item text-dark" href="{{ url('/Working-on-Page')}}">Sports</a></li>
+                        <li><a class="dropdown-item text-dark" href="{{ url('/sport-Events-Participants-List')}}">Sport</a></li>
+                        <li><a class="dropdown-item text-dark" href="{{ url('/Academic-Events-Participants-List')}}">Academic</a></li>
                     </ul>
                 </li>
 
@@ -61,11 +61,6 @@
                         <li><a class="dropdown-item text-dark" href="{{ url('/Working-on-Page')}}">Academic</a></li>
                         <li><a class="dropdown-item text-dark" href="{{ url('/Working-on-Page')}}">Sports</a></li>
                     </ul>
-                </li>
-
-                <!-- About Us -->
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About Us</a>
                 </li>
             </ul>
 
@@ -141,18 +136,18 @@
        <!-- Mentor 3 -->
        <div class="col">
            <div class="class-3">
-               <img src="{{ asset('/image/Chandan')}}" alt="Mentor 3">
+               <img src="{{ asset('/image/Pragyan 2025/Prachi Tiwari.jpg')}}" alt="Mentor 3">
                <p style="font-size:15px; font-weight:bold; padding:0px; margin:0px; color: rgb(5, 220, 244);">Prachi Tiwari</p>
-               <p style="font-size:12px; font-weight:bold; padding:0px; margin:0px">................</p>
+               <p style="font-size:12px; font-weight:bold; padding:0px; margin:0px">Head Fest</p>
            </div>
        </div>
 
        <!-- Mentor 4 -->
        <div class="col">
            <div class="class-3">
-               <img src="{{ asset('/image/IT HO')}}" alt="Mentor 4">
-               <p style="font-size:15px; font-weight:bold; padding:0px;margin:0px; color: rgb(5, 220, 244);"></p>
-               <p style="font-size:12px; font-weight:bold; padding:0px;margin:0px">...............</p>
+               <img src="{{ asset('/image/Pragyan 2025/Jya Mishra.jpg')}}" alt="Mentor 4">
+               <p style="font-size:15px; font-weight:bold; padding:0px;margin:0px; color: rgb(5, 220, 244);">Laxyajya Mishra</p>
+               <p style="font-size:12px; font-weight:bold; padding:0px;margin:0px">Co-Fest Head</p>
            </div>
        </div>
    </div>

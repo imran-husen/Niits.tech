@@ -160,6 +160,7 @@
                         <option value="Tambola" data-price="50">Tambola</option>
                         <option value="Coding" data-price="50">Coding</option>
                         <option value="Graphic Design" data-price="50">Graphic Design</option>
+                        <option value="Dum Charades" data-price="100">Dum Charades</option>
                     </select>
                 </div>
             </div>

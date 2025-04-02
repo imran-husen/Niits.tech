@@ -21,7 +21,9 @@ Route::get('/Pragyan-2025',[EventController::class, 'pragyanHome']);
 Route::get('/Cultural-Events',[EventController::class, 'cultural']);
 Route::get('/Cultural-Events-Participants-List',[EventController::class, 'culturalData']);
 Route::get('/Sports-Events',[EventController::class, 'sports']);
+Route::get('/sport-Events-Participants-List',[EventController::class, 'sportData']);
 Route::get('/Academic-Events',[EventController::class, 'academic']);
+Route::get('/Academic-Events-Participants-List',[EventController::class, 'acdmData']);
 Route::get('/External-Events-Participation',[EventController::class, 'extFinal_data']);
 Route::get('/External-Participants',[EventController::class, 'External']);
 Route::post('/Login-Admin-panels-of-Pragyan',[EventController::class, 'admin'])->name('event_Admin');
@@ -39,3 +41,5 @@ Route::post('/final-External_data', [EventController::class, 'Final_Ext_data'])-
 
 // Here i will write the all code for searching
 Route::get('cltr_Data', [EventController::class, 'cltr_Data'])->name('cltr_Data');
+Route::get('sprt_Data', [EventController::class, 'sprt_Data'])->name('sprt_Data');
+Route::get('acdm_Data', [EventController::class, 'acdm_Data'])->name('acdm_Data');

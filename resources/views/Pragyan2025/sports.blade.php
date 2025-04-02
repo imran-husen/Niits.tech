@@ -171,6 +171,8 @@
                         <option value="Shot put" data-price="50">Shot Put</option>
                         <option value="Arm-Wrestling" data-price="50">Arm-Wrestling</option>
                         <option value="Mugical Chair" data-price="50">Musical Chair</option>
+                        <option value="Seven Tile" data-price="100">Seven Tile</option>
+                        <option value="Gallery" data-price="100">Gallery</option>
                     </select>
                 </div>
             </div>

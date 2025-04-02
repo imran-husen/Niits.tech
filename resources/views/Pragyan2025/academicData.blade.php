@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Students Datails of the Cultural events Data</title>
+    <title>Students Datails of the Academic events Data</title>
     <!-- For other formats like PNG, use the following -->
    <link rel="icon" href="{{ asset('/image/main_logo.png') }}" type="image/png"> 
     <!-- Bootstrap CSS -->
@@ -29,7 +29,7 @@
 
         <!-- Search Form -->
         <div class="card p-3 mb-4">
-          <form action="{{ route('cltr_Data') }}" method="GET">
+          <form action="{{ route('acdm_Data') }}" method="GET">
            <div class="row">
             <div class="col-md-8">
                 <input type="tel" id="searchInput" name="number" class="form-control mt-1" placeholder="Enter Mobile Number for search your details">
@@ -54,12 +54,12 @@
                     </tr>
                 </thead>
                 <tbody id="studentTable">
-                        @foreach ( $culturalData as $cltr)
-                            <td>{{ $cltr->name }}</td>
-                            <td>{{ $cltr->branch }}</td>
-                            <td>{{ $cltr->roll_number }}</td>
-                            <td>{{ $cltr->event_name }}</td>
-                            <td>{{ $cltr->year }}</td>
+                        @foreach ( $acdmData as $acdm)
+                            <td>{{ $acdm->name }}</td>
+                            <td>{{ $acdm->branch }}</td>
+                            <td>{{ $acdm->roll_number }}</td>
+                            <td>{{ $acdm->event_name }}</td>
+                            <td>{{ $acdm->year }}</td>
                         </tr>
                         @endforeach
                 </tbody>

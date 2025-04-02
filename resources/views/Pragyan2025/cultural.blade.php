@@ -157,7 +157,7 @@
                         <option value="Mime" data-price="100">Mime</option>
                         <option value="Film Making" data-price="100">Film Making</option>
                         <option value="Dart Shooting" data-price="50">Dart Shooting</option>
-                        <option value="kite" data-price="25">kite</option>
+                        <option value="Dance Battle" data-price="200">Dance Battle</option>
                     </select>
                 </div>
             </div>

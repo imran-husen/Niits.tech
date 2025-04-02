@@ -89,6 +89,51 @@ class EventController extends Controller
         return view('Pragyan2025.culturalData', compact('culturalData'));
     }
 
+    // Here  i am writing code to show the data of the sports Events
+    public function sportData(){
+
+        $sportData = SportEvents::all();
+        return view('Pragyan2025.sportData', compact('sportData'));
+    }
+    // Writing the code for the seaching the data from the list of sport events
+    public function sprt_Data(Request $request)
+    {
+        $data = $request->input('number');
+        // dd($data);
+        // Check if input is provided
+        if ($data) {
+            $sportData= DB::table('sport_events')->where('number', 'like', '%' . $data . '%')->get();
+            return view('Pragyan2025.sportData', compact('sportData'));
+        } else {
+            $sportData = []; // Empty data when no input
+        }
+
+        return view('Pragyan2025.sportData', compact('sportData'));
+    }
+
+
+    // Here i am writing the code of the academic data searching
+    public function acdmData(){
+
+        $acdmData =AcademicEvents::all();
+        return view('Pragyan2025.academicData', compact('acdmData'));
+    }
+    // Writing the code for the seaching the data from the list of academic events
+    public function acdm_Data(Request $request)
+    {
+        $data = $request->input('number');
+        // dd($data);
+        // Check if input is provided
+        if ($data) {
+            $acdmData = DB::table('academic_events')->where('number', 'like', '%' . $data . '%')->get();
+            return view('Pragyan2025.academicData', compact('acdmData'));
+        } else {
+            $acdmData = []; // Empty data when no input
+        }
+
+        return view('Pragyan2025.academicData', compact('acdmData'));
+    }
+
 
 
 
@@ -196,7 +241,8 @@ class EventController extends Controller
         {
         
             $receiptFile = $request->file('reciept');
-            $receiptFilename ='_receipt.' . $receiptFile->getClientOriginalExtension();
+            $timestamp = time(); // Get the current timestamp
+            $receiptFilename = $timestamp . '_receipt.' . $receiptFile->getClientOriginalExtension();
             $receiptFile->move('external-Candidate', $receiptFilename);
             $receiptPath = 'external-Candidate/' . $receiptFilename;
         
